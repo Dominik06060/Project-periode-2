@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Inter";
+  height: 100vh;
+  width: 100%;
+  background-color: #0c0c0c;
+}
+.header {
+  width: 100%;
+  padding-left: 128px;
+  padding-right: 128px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px white solid;
+}
+.header h1 {
+  color: whitesmoke;
+  animation: swapColors 2s infinite;
+}
+.header__items a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.header__items a:hover {
+  color: gray;
+}
+.header__items {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 48px;
+}
+@keyframes swapColors {
+  0%,
+  100% {
+    color: #ff4b57;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@keyframes swapColorsReverse {
+  0%,
+  100% {
+    color: white;
+  }
+  50% {
+    color: #ff4b57;
+  }
+}
+.header h1 span {
+  animation: swapColorsReverse 2s infinite;
+}
+.active {
+  text-decoration: underline !important;
+  text-underline-offset: 6px;
+}
+.hero {
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 64px;
+}
+.hero p {
+  font-weight: 300;
+  width: 450px;
+}
+.hero-bold {
+  font-weight: 900;
+  color: #ff4b57;
+}
+.hero-notbold {
+  font-weight: 900;
+  color: #48c448;
+}
+.hero a {
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hero a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.about {
+  color: white;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+.about__description p {
+  width: 400px;
+  font-size: 18px;
+  
+}
+
+img {
+  height: 350px;
+}
+
+.about__content h2 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.zdjecie {
+  height: 280px;
+}
+
+.skills_description {
+width: 900px;
+  font-size: 18px;
+  color: whitesmoke;
+  padding: 50px ;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 40px;
+  color: white;
+}
+
+.contact h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.link {
+  display: flex;
+  gap: 32px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.link img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.link img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+footer {
+  color: whitesmoke;
+  margin-top: 20px 0;
+  text-align: center;
+  opacity: 0,6;
+  
+  
+}
